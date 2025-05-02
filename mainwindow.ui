@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>MainWindow</class>
+<widget class="QMainWindow" name="MainWindow">
+<property name="geometry"><rect><x>0</x><y>0</y><width>750</width><height>550</height></rect></property>
+<property name="windowTitle"><string>Управление электроприборами</string></property>
+<widget class="QWidget" name="centralwidget">
+ <layout class="QVBoxLayout" name="verticalLayout">
+  <item><widget class="QListWidget" name="deviceListWidget">
+   <property name="styleSheet"><string notr="true">
+    QListWidget {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 5px;
+    }
+    QListWidget::item {
+      padding: 8px;
+      border-bottom: 1px solid #e2e8f0;
+      background: white;
+      margin: 2px;
+      border-radius: 6px;
+    }
+    QListWidget::item:hover {
+      background: #f0f9ff;
+    }
+    QListWidget::item:selected {
+      background: #7dd3fc;
+      color: #1e3a8a;
+      border-radius: 6px;
+    }</string></property>
+  </widget></item>
+
+  <item><widget class="QLabel" name="totalPowerLabel">
+   <property name="text"><string>Устройств: 0 | Общая мощность: 0 Вт</string></property>
+   <property name="alignment"><set>Qt::AlignCenter</set></property>
+   <property name="styleSheet"><string notr="true">
+    QLabel {
+      font: bold 15px;
+      color: #1e3a8a;
+      background: #e6f7ff;
+      border-radius: 8px;
+      padding: 12px;
+      border: 1px solid #cfe7ff;
+    }</string></property>
+  </widget></item>
+
+  <item><layout class="QHBoxLayout" name="horizontalLayout">
+   <item><widget class="QPushButton" name="addFridgeButton">
+    <property name="text"><string>Добавить холодильник</string></property>
+    <property name="styleSheet"><string notr="true">
+     QPushButton {
+       background: #7dd3fc;
+       color: #1e3a8a;
+       border: none;
+       border-radius: 8px;
+       padding: 10px 18px;
+       font: bold 14px;
+     }
+     QPushButton:hover { background: #38bdf8; }
+     QPushButton:pressed { background: #0ea5e9; }</string></property>
+   </widget></item>
+
+   <item><widget class="QPushButton" name="addDrillButton">
+    <property name="text"><string>Добавить дрель</string></property>
+    <property name="styleSheet"><string notr="true">
+     QPushButton {
+       background: #7dd3fc;
+       color: #1e3a8a;
+       border: none;
+       border-radius: 8px;
+       padding: 10px 18px;
+       font: bold 14px;
+     }
+     QPushButton:hover { background: #38bdf8; }
+     QPushButton:pressed { background: #0ea5e9; }</string></property>
+   </widget></item>
+
+   <item><widget class="QPushButton" name="editButton">
+    <property name="text"><string>Изменить</string></property>
+    <property name="styleSheet"><string notr="true">
+     QPushButton {
+       background: #cbd5e1;
+       color: #1e293b;
+       border: none;
+       border-radius: 8px;
+       padding: 10px 18px;
+       font: bold 14px;
+     }
+     QPushButton:hover { background: #94a3b8; }
+     QPushButton:pressed { background: #64748b; }
+     QPushButton:disabled { background: #e2e8f0; }</string></property>
+   </widget></item>
+
+   <item><widget class="QPushButton" name="deleteButton">
+    <property name="text"><string>Удалить</string></property>
+    <property name="styleSheet"><string notr="true">
+     QPushButton {
+       background: #fda4af;
+       color: #881337;
+       border: none;
+       border-radius: 8px;
+       padding: 10px 18px;
+       font: bold 14px;
+     }
+     QPushButton:hover { background: #fb7185; }
+     QPushButton:pressed { background: #f43f5e; }
+     QPushButton:disabled { background: #e2e8f0; }</string></property>
+   </widget></item>
+
+   <item><widget class="QPushButton" name="turnOnAllButton">
+    <property name="text"><string>Включить все</string></property>
+    <property name="styleSheet"><string notr="true">
+     QPushButton {
+       background: #9370DB;  <!-- Основной цвет -->
+       color: white;
+       border: none;
+       border-radius: 8px;
+       padding: 10px 18px;
+       font: bold 14px;
+     }
+     QPushButton:hover {
+       background: #7B68EE;  <!-- При наведении -->
+     }
+     QPushButton:pressed {
+       background: #6A5ACD;  <!-- При нажатии -->
+     }</string></property>
+   </widget></item>
+  </layout></item>
+ </layout>
+</widget>
+</widget>
+<resources/>
+<connections/>
+</ui>
